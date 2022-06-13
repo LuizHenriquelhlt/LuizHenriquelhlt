@@ -1,0 +1,42 @@
+# Calculadora Básica
+
+#LIMITE = 9999
+
+def soma (a, b):
+    return a+b
+
+def sub (a, b):
+    return a-b
+    
+def mult (a, b):
+    return a*b
+
+def div (a, b):
+    if (b == 0):
+        print("Erro, divisão por 0")
+    else:
+        return a/b
+    return -1
+    
+
+print('Calculadora Básica')
+
+entrada = input('Escolha sua operação so para soma,\nsub para subtração,\nmult para multiplicação,\ndiv para divisão:')
+if (entrada == 'so'):
+    val1 = int (input ('Digite o primeiro valor: '))
+    val2 = int (input ('Digite o segundo valor: ')) 
+    print(f"A soma dos valores é: {soma(val1,val2)}")
+elif (entrada == 'sub'):
+    val1 = int (input ('Digite o primeiro valor: '))
+    val2 = int (input ('Digite o segundo valor: ')) 
+    print(f"A subtração dos valores é: {sub(val1,val2)}")
+elif(entrada == 'mult'):
+    val1 = int (input ('Digite o primeiro valor: '))
+    val2 = int (input ('Digite o segundo valor: ')) 
+    print(f"A multiplicação dos valores é: {mult(val1,val2)}")
+else:
+    val1 = int (input ('Digite o primeiro valor: '))
+    val2 = int (input ('Digite o segundo valor: ')) 
+    print(f"A divisão dos valores é: {div(val1,val2)}")
+
+
