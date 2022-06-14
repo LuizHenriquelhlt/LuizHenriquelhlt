@@ -1,0 +1,4 @@
+val1 = int (input("Digite o primeiro valor:"))
+val2 = int (input("Digite o segundo valor:"))
+val3 = int (input("Digite o terceiro valor:"))
+print(f'A soma dos valores é: {(val1+val2+val3)}')
