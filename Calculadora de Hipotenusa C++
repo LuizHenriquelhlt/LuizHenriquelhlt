@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+float c1,c2,h;
+cout<<"Digite o valor do 1° cateto: "<<endl;
+cin>>c1;
+cout<<"Digite o valor do 2° cateto: "<<endl;
+cin>>c2;
+
+
+h=pow(c1,2)+pow(c2,2);
+h=sqrt(h);
+
+
+cout<<"O valor da hipotenusa: "<< h <<endl;
+
+
+    return 0;
+}
