@@ -1,0 +1,25 @@
+#include<cmath>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+float a,b,c,d,mediap;
+
+cout<<"Digite o primeiro valor"<< endl;
+cin>> a;
+cout<<"Digite o segundo valor"<< endl;
+cin>> b;
+cout<<"Digite o terceiro valor"<< endl;
+cin>> c;
+cout<<"Digite o quarto valor"<< endl;
+cin>> d;
+
+mediap=(((a)+(b*2)+(c*3)+(d*4))/(1+2+3+4));
+
+cout<<"O valor é: "<< mediap;
+
+    return 0;
+}
