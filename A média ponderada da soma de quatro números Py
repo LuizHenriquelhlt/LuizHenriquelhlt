@@ -1,0 +1,6 @@
+val1 = float(input('Digite o primeiro valor: '))
+val2 = float(input('Digite o segundo valor: '))
+val3 = float(input('Digite o terceiro valor: '))
+val4 = float(input('Digite o quarto valor: '))
+
+print(f'O valor da média entre três valores é{((val1+(val2*2)+(val3*3)+(val4*4))/(1+2+3+4))}')
