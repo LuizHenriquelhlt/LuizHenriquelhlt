@@ -1,0 +1,14 @@
+#include <math.h>
+#include <iostream>
+
+using namespace std;    
+void p(auto something)
+{
+    cout<<something<<endl;
+}
+int main() {
+
+p("Digite um valor:");
+
+    return 0;
+}
