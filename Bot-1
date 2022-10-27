@@ -1,20 +1,50 @@
-from email import message
-from urllib import response
+from typing import AsyncIterable
+from unicodedata import name
 import discord
+import datetime
 from discord.ext import commands, tasks
+import requests
+
 
 intents = discord.Intents.all()
 
+# Comando pra chamar o Bot
+
+#-----------------------------------------------------------------------------------
+
 bot = commands.Bot(command_prefix="!", intents=intents)
+
+# Evento que mostra o Bot Funcionando
 
 @bot.event
 async def on_ready():
    print(f"Estou pronto! Estou conectado como {bot.user}")
+   # current_time.start()
+
+#-----------------------------------------------------------------------------------
+
+# Função reação
+ 
+@bot.event
+async def on_reaction_add(reaction, user):
+   print(reaction.emoji)
+   if reaction.emoji == "🐶":
+      role = user.guild.get_role(1035259000763207700)
+      await user.add_roles(role)
+   elif reaction.emoji == "😸":
+      role = user.guild.get_role(1035259392645410907)
+      await user.add_roles(role)
+
+
+
+#-----------------------------------------------------------------------------------
+
+# Função para deletar certos tipos de mensagem
 
 @bot.event
 async def on_message(message):
     if message.author == bot.user: 
-        return
+         return
 
     if "palavrão" in message.content:
 
@@ -22,17 +52,105 @@ async def on_message(message):
 
         await message.delete()
 
-    await bot.process_commands(message)
+    await bot.process_commands(message) #Linha para executar todos os porgramas a seguir
 
+#-----------------------------------------------------------------------------------
+
+# Função de dar "Oi" 
 
 @bot.command(name="oi")
 async def send_hello(ctx):
     name = ctx.author.name
 
-    response= "Olá, " + name
+    response= "Olá, miauau 😸🐶🫶" + name 
 
     await ctx.send(response)
 
-@tasks.loop(seconds=110)
+#-----------------------------------------------------------------------------------
 
-bot.run()
+#Código de loop task
+
+# @tasks.loop(seconds=10)
+# async def current_time():
+#    now = datetime.datetime.now() 
+
+#    now =now.strftime("%d/%m/%Y às %H:%M:%S")
+
+#    chanel = bot.get_channel(1034558139258908762)
+
+#    await chanel.send("Data ataual:"+now)
+
+# Função de ligação com o Bot
+
+#-----------------------------------------------------------------------------------
+
+# Função para calcular
+
+@bot.command(name="Calc")
+async def calculate_expression(ctx, *expression):
+   expression = "".join(expression)
+   
+   response = eval(expression)
+
+   await ctx.send("A resposta é: "+ str(response))
+
+#-----------------------------------------------------------------------------------
+
+# Função de consumir APIs
+
+# @bot.command()
+# async def binance(ctx, coin, base):
+#    try:
+#       response = requests.get(f"https://api.binance.com/api/v3/ticker/price?symbol={coin.upper()}{base.upper()}")
+      
+#       data = response.json()
+#       price = data.get("price")
+
+#       if price:
+#          await ctx.send(f"O valor do par {coin}/{base} é {price}")
+#       else:
+#          await ctx.send(f"O valor do par {coin}/{base} é inválido")
+#    except Exception as error:
+#       await ctx.send("ERRO")
+#       print(error)
+
+#-----------------------------------------------------------------------------------
+
+# Função mensagem secreta
+
+@bot.command(name="Segredo")
+async def secret(ctx):
+   try:
+      await ctx.author.send('Miauau, você é incrivel!😸🐶🫶')
+   except discord.errors.Forbidden:
+      await ctx.send("Não posso te contar o segredo! Você bloqueio minha mensagem!")
+   
+#-----------------------------------------------------------------------------------
+
+# Criando com Embed 
+
+@bot.command(name="foto")
+async def get_random_image(ctx): 
+   url_image = "https://picsum.photos/1920/1080"
+
+   embed = discord.Embed (
+      title = "Resultado da busca de imagem!", # Titulo
+      description = "PS: A busca é aleatória!", # Descrição
+      color = 0x0000FF,
+   )
+   
+   embed.set_author(name=bot.user.name, icon_url = bot.user.avatar) # Autor
+
+   embed.set_footer(text=bot.user.name, icon_url = bot.user.avatar) # Rodapé 
+
+   embed.add_field(name="API", value="Usamos a API do https://picsum.photos")
+
+   embed.add_field(name="Parâmetros", value="{largura}/{altura}")
+
+   embed.add_field(name="Exemplo", value=url_image, inline=False)
+
+   embed.set_image(url=url_image) # Setar uma imagem
+
+   await ctx.send(embed=embed)
+
+bot.run("-")
