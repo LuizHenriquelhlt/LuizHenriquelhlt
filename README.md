@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/luizhltdev"><img src="https://img.shields.io/badge/LinkedIn-luizhltdev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:luiz.hlt.unb@gmail.com"><img src="https://img.shields.io/badge/E--mail-luiz.hlt.unb%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
+  <a href="mailto:luiz.hlt.dev@gmail.com"><img src="https://img.shields.io/badge/E--mail-luiz.hlt.dev%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"></a>
 </p>
 
 ---
