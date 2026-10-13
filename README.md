@@ -60,7 +60,7 @@ Resolvo problemas complexos com **dados, automação e tecnologia**. Minha traje
 
 | Projeto | O que é | Tecnologias |
 |---|---|---|
-| [**ProcJus**](https://github.com/LuizHenriquelhlt/ProcJus) · [demo](https://proc-jus.vercel.app) | Ferramenta que resume documentos jurídicos para agilizar o trabalho de quem precisa analisá-los | Python, HTML, CSS |
+| [**ProcJus**](https://github.com/LuizHenriquelhlt/ProcJus) | Plataforma que traduz documentos jurídicos para linguagem simples com IA: resumo, prazos, glossário interativo e chat sobre o documento. Login seguro (Argon2 + JWT), provedores de IA plugáveis, testes e CI | FastAPI, React, TypeScript, LLMs, Docker |
 | [**Foundry-Modulos-Naruto-5e**](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e) | Pipeline de extração e estruturação de dados: parsers em Python convertem livros em PDF numa base com mais de 1.800 registros (jutsus, clãs, classes) | Python, JavaScript |
 | [**Foundry-Modulos-Pokemon-Mundo-Perfeito**](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito) | ETL de mais de 2.800 registros extraídos de 6 livros (cerca de 1.150 espécies e 830 golpes), com regras de negócio implementadas em código | Python, pdfplumber, Node.js |
 
