@@ -16,7 +16,7 @@
 
 Sou **Desenvolvedor Python Sênior e Engenheiro de Dados** na **Positivo S+**. Transformo dados dispersos e sistemas legados em **informação confiável para decisão**, cuidando de todo o caminho: da extração e modelagem até o dashboard e o deploy em produção.
 
-Antes disso, fui **Chefe de Serviço na Procuradoria-Geral da Fazenda Nacional (PGFN)**, onde liderei equipe, governança de dados e automação de rotinas. Por isso, junto **profundidade técnica** e **visão de negócio**.
+Antes disso, fui **Chefe de Serviço e Desenvolvedor Pleno na Procuradoria-Geral da Fazenda Nacional (PGFN)**, onde liderei equipe, governança de dados e automação de rotinas. Por isso, junto **profundidade técnica** e **visão de negócio**.
 
 <table>
   <tr>
@@ -72,16 +72,22 @@ Antes disso, fui **Chefe de Serviço na Procuradoria-Geral da Fazenda Nacional (
 | Projeto | Problema que resolve | Destaques técnicos |
 |---|---|---|
 | ⚖️ **[ProcJus](https://github.com/LuizHenriquelhlt/ProcJus)** · [**▶ demo**](https://luizhenriquelhlt.github.io/ProcJus/) | Documentos jurídicos são difíceis de entender. O ProcJus traduz o texto para linguagem simples, com resumo, prazos, glossário e chat sobre o documento. | FastAPI · React + TypeScript · LLMs plugáveis · Argon2 + JWT · Docker · testes e CI |
-| 🧩 **[Pokémon Mundo Perfeito](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito)** | Seis livros em PDF viram uma base estruturada e validada, pronta para uso em software. | ETL em Python · pdfplumber · mais de 2.800 registros (1.149 espécies, 832 golpes) · regras de negócio em código |
-| 🧩 **[Naruto 5e](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e)** | Mesmo desafio de extração aplicado a outro conjunto de livros, com parsers modulares e reaproveitáveis. | Parsers PDF em Python · mais de 1.800 registros · build automatizado de compêndios |
+| 🧩 **[Pokémon Mundo Perfeito](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito)**<br>[![release](https://img.shields.io/github/v/release/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito?style=flat-square&label=release&color=1F8ACB)](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito/releases) | Seis livros em PDF viram um produto versionado e em evolução contínua: **54 releases** com versionamento semântico, instalação por manifesto e **migração automática** dos dados que já estão nos mundos dos usuários. | ETL em Python · pdfplumber · cerca de **3.000 registros** (1.149 espécies, 833 golpes, 584 recursos) · regras de negócio em código (CA, CD, áreas de efeito, Mega Evolução, Terastal) |
+| 🧩 **[Naruto 5e](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e)**<br>[![release](https://img.shields.io/github/v/release/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e?style=flat-square&label=release&color=1F8ACB)](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e/releases) | Mesmo pipeline de extração aplicado a outro conjunto de livros, com parsers modulares e reaproveitáveis. Primeira versão pública já lançada. | Parsers PDF em Python · mais de **2.700 registros** (1.827 jutsus, 368 talentos, 45 clãs, 11 classes) · build automatizado de compêndios |
+
+### 🏷️ Últimas releases
+
+- **[Pokémon Mundo Perfeito v1.35.0](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito/releases/tag/v1.35.0)**: 42 golpes passam a calcular a CD com modificador por fórmula, e 20 ganham área de efeito configurada. As fichas que já existiam são migradas automaticamente.
+- **[Pokémon Mundo Perfeito v1.34.0](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Pokemon-Mundo-Perfeito/releases/tag/v1.34.0)**: Gerações 8 e 9 completas (77 itens e 73 habilidades), correção do cálculo de CA e compatibilidade com o Foundry v13/v14.
+- **[Naruto 5e v0.3.1](https://github.com/LuizHenriquelhlt/Foundry-Modulos-Naruto-5e/releases/tag/v0.3.1)**: primeira versão pública, com 1.827 jutsus em 5 compêndios, 45 clãs, 11 classes e Chakra integrado à ficha.
 
 ## 💼 Trajetória
 
 | Período | Cargo | Organização | Foco |
 |---|---|---|---|
 | **2026 – atual** | **Desenvolvedor Python Sênior** | Positivo S+ | ETL → BigQuery, automação SIAPE, MVPs, deploy |
-| 2025 – 2026 | Chefe de Serviço | PGFN | Gestão de equipe, qualidade de dados, automação |
-| 2024 – 2025 | Aluno Pesquisador | PGFN | Web scraping, modelagem de bancos de dados |
+| 2025 – 2026 | Chefe de Serviço – Desenvolvedor Pleno | PGFN | Gestão de equipe, qualidade de dados, automação |
+| 2024 – 2025 | Aluno Pesquisador – Desenvolvedor Pleno | PGFN | Web scraping, modelagem de bancos de dados |
 | 2024 – 2025 | Estagiário de Engenharia | CNI | Dashboards de BI, automação de processos |
 | 2022 – 2024 | Estagiário de TI | PGFN | Tecnologia da Informação |
 
@@ -104,7 +110,7 @@ Antes disso, fui **Chefe de Serviço na Procuradoria-Geral da Fazenda Nacional (
 <summary><b>🌎 English summary</b></summary>
 <br>
 
-**Senior Python Developer & Data Engineer** based in Brasília, Brazil. I build end-to-end **ETL pipelines into Google BigQuery**, automate data extraction from legacy government systems, and ship APIs and full-stack apps (**FastAPI + React/TypeScript**). Previously a **team lead at Brazil's Office of the Attorney General of the National Treasury (PGFN)**, working on data governance and process automation.
+**Senior Python Developer & Data Engineer** based in Brasília, Brazil. I build end-to-end **ETL pipelines into Google BigQuery**, automate data extraction from legacy government systems, and ship APIs and full-stack apps (**FastAPI + React/TypeScript**). Previously a **team lead and mid-level developer at Brazil's Office of the Attorney General of the National Treasury (PGFN)**, working on data governance and process automation.
 
 📫 [LinkedIn](https://www.linkedin.com/in/luizhltdev) · [luiz.hlt.dev@gmail.com](mailto:luiz.hlt.dev@gmail.com)
 </details>
